@@ -4,7 +4,19 @@ from datetime import datetime, timezone, timedelta
 import json
 import argparse
 import sys
+import itertools, threading , time
+
 from openpyxl import Workbook
+
+def spinner():
+    for c in itertools.cycle(['|', '/', '-', '\\']):
+        if getattr(spinner, "stop", False):
+            break
+        sys.stdout.write('\rFetching metrics from oci ' + c)
+        sys.stdout.flush()
+        time.sleep(0.1)
+    sys.stdout.write("\rDone!        \n")
+
 
 def get_metric_value(monitoring_client, namespace, query, compartment_id, start_seconds=300, end_seconds=0):
     now = datetime.now(timezone.utc)
@@ -109,4 +121,10 @@ def main():
     print(f"Excel output saved to {args.output_xlsx}")
 
 if __name__ == "__main__":
-    main()
+    t=threading.Thread(target=spinner)
+    t.start()
+    try:
+        main()
+    finally:
+        spinner.stop = True
+        t.join()
