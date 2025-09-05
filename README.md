@@ -76,7 +76,7 @@ python --version
 1. Download latest Python 3.x from [Python Downloads](https://www.python.org/downloads/)
 2. During installation:
 
-   * Check **Add Python to PATH**
+   * Check **Add Python to PATH** (https://youtu.be/oa7YR5GpJ0A)
    * Choose **Install Now**
 
 #### Install OCI SDK
