@@ -34,12 +34,6 @@ tenancy=ocid1.tenancy.oc1..aaaaaaaaexample
 region=m-jeddah-1 
 ````
 
-Set correct permissions for the private key:
-
-```bash
-chmod 600 ~/.oci/oci_api_key.pem
-```
-
 ---
 
 ### 1.2 Get User OCID and Fingerprint
@@ -58,6 +52,13 @@ chmod 600 ~/.oci/oci_api_key.pem
 3. Copy the fingerprint and all details into your `config` file. For multiple regions, add a new section after `[DEFAULT]` and ensure the `key_file` path is correct.
 
 ---
+
+Set correct permissions for the private key:
+
+```bash
+chmod 600 ~/.oci/oci_api_key.pem
+```
+
 
 ### 1.3 Python & OCI SDK
 
