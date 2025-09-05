@@ -125,7 +125,7 @@ oci
 
 ## 4. Usage
 
-Run the script for Jeddah region:
+Run the script for Jeddah region example:
 
 ```bash
 python3 oci_metrics.py -c JEDDAH -i all_jeddah_instances.txt -o output.json -x output.xlsx
