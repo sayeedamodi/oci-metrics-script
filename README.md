@@ -51,6 +51,9 @@ region=m-jeddah-1
 
 3. Copy the fingerprint and all details into your `config` file. For multiple regions, add a new section after `[DEFAULT]` and ensure the `key_file` path is correct.
 
+<img width="1518" height="365" alt="image" src="https://github.com/user-attachments/assets/93214d4c-97e8-4cd2-96a2-ef0df9a9a240" />
+
+
 ---
 
 Set correct permissions for the private key:
