@@ -139,6 +139,17 @@ python oci_metrics.py -c JEDDAH -i all_jeddah_instances.txt -o output.json -x ou
 
 The script generates `output.json` and `output.xlsx` in the current directory.
 
+If your requirement is
+
+just json use -o output.json 
+```cmd
+python oci_metrics.py -c JEDDAH -i all_jeddah_instances.txt -o output.json 
+```
+or xlsx use -x output.xlsx
+```cmd
+python oci_metrics.py -c JEDDAH -i all_jeddah_instances.txt -x output.xlsx
+```
+
 ---
 
 ## 5. Notes
@@ -148,3 +159,17 @@ The script generates `output.json` and `output.xlsx` in the current directory.
 * Keep your private keys secure at all times.
 
 
+thanks ,
+<table style="font-family:Arial, sans-serif; font-size:14px; color:#333;">
+  <tr>
+    <td style="padding:6px 0; border-top:1px solid #ccc; border-bottom:1px solid #ccc;">
+      <strong style="font-size:16px; color:#000;">Sayeed Amodi</strong><br>
+      <a href="mailto:sayeedamodix@gmail.com" style="color:#1a73e8; text-decoration:none;">
+        📧 sayeedamodix@gmail.com
+      </a><br>
+      <a href="https://www.linkedin.com/in/sayeed-amodi/" style="color:#1a73e8; text-decoration:none;">
+        🔗 linkedin.com/in/sayeed-amodi
+      </a>
+    </td>
+  </tr>
+</table>
